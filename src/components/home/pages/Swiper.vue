@@ -1,38 +1,47 @@
 <template>
-  <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide>
-      <img
-        src="http://5b0988e595225.cdn.sohucs.com/images/20180412/eb70ca29a8e54a2988cb7e4d6f87bc12.png"
-      />
-    </swiper-slide>
-    <swiper-slide>
-      <img
-        src="http://5b0988e595225.cdn.sohucs.com/images/20180412/e84e8bff26324d5b89a6cec930df8cd9.png"
-    /></swiper-slide>
-    <swiper-slide>
-      <img
-        src="https://i.pximg.net/img-master/img/2016/02/02/02/36/26/55040756_p0_master1200.jpg"
-    /></swiper-slide>
-    <swiper-slide>
-      <img
-        src="https://i.pximg.net/img-master/img/2017/06/01/08/51/34/63166871_p0_master1200.jpg"
-    /></swiper-slide>
-    <swiper-slide>
-      <img
-        src="https://i.pximg.net/img-master/img/2016/01/11/07/24/37/54657215_p0_master1200.jpg"
-    /></swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-  </swiper>
+  <div class="wrapper">
+    <swiper ref="mySwiper"
+            :options="swiperOption">
+      <swiper-slide>
+        <img class="swiper-image"
+             src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589546257057&di=6efe91cbe826d04a223c6c3e71abd574&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F90f81a4526290e3bb95f6c3d87829325425b689044d80-BVMEee_fw658" />
+      </swiper-slide>
+      <swiper-slide>
+        <img class="swiper-image"
+             src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589546141975&di=cf00016628b881f9c8e995bb2a289b29&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn23%2F33%2Fw500h333%2F20180613%2F7eaf-hcwpcmq5312135.jpg" /></swiper-slide>
+      <swiper-slide>
+        <img class="swiper-image"
+             src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3296219714,2452443564&fm=26&gp=0.jpg" /></swiper-slide>
+      <swiper-slide>
+        <img class="swiper-image"
+             src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589545744494&di=29c46abc4442b75e0448b604487582e4&imgtype=0&src=http%3A%2F%2Fnews.0554.us%2Fuploads%2Fallimg%2F180719%2F05521R644_0.jpg" /></swiper-slide>
+      <swiper-slide>
+        <img class="swiper-image"
+             src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589546296802&di=bee327d1f8fe5e6aa1a706a24880964e&imgtype=0&src=http%3A%2F%2Fp.qiuxingwang.cn%2Fd%2Ffile%2Finveno%2F2016-07-15%2F0e76df313059fb9f411415ab8cc22958.jpeg" /></swiper-slide>
+      <div class="swiper-pagination"
+           slot="pagination"></div>
+    </swiper>
+  </div>
 </template>
 
 <script>
 export default {
   name: "HomeSwiper",
-  data() {
+  data () {
     return {
-      swiperOptions: {}
+      swiperOption: {
+        pagination: '.swiper-pagination',
+        loop: true
+      }
     };
   }
 };
 </script>
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.wrapper
+  overflow hidden
+  padding-bottom 1px
+.swiper-image
+  width 94%
+  height 450px
+</style>
