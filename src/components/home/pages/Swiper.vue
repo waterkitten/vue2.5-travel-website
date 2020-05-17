@@ -5,7 +5,7 @@
             :options="swiperOption">
       <swiper-slide class="image-slide">
         <img class="swiper-image"
-             src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589546257057&di=6efe91cbe826d04a223c6c3e71abd574&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F90f81a4526290e3bb95f6c3d87829325425b689044d80-BVMEee_fw658" />
+             src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3123730603,2020988368&fm=26&gp=0.jpg" />
       </swiper-slide>
       <swiper-slide class="image-slide">
         <img class="swiper-image"

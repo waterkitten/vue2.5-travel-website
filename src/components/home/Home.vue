@@ -24,14 +24,14 @@ export default {
     HomeWeekend
   },
   methods: {
-    getHomeInfo() {
+    getHomeInfo () {
       axios.get("/api/index.json").then(this.getHomeInfoSucc);
     },
-    getHomeInfoSucc(res) {
+    getHomeInfoSucc (res) {
       console.log(res);
     }
   },
-  mounted() {
+  mounted () {
     this.getHomeInfo();
   }
 };
