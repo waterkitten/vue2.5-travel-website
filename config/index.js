@@ -11,7 +11,7 @@ module.exports = {
     assetsPublicPath: "/",
     proxyTable: {
       "/api": {
-        target: "http://localhost:8080",
+        target: "http://localhost:8082",
         pathRewrite: {
           "^/api": "/static/mock"
         }
@@ -20,11 +20,19 @@ module.exports = {
 
     // Various Dev Server settings
     host: "localhost", // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8082, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+
+    // Use Eslint Loader?
+    // If true, your code will be linted during bundling and
+    // linting errors and warnings will be shown in the console.
+    useEslint: true,
+    // If true, eslint errors and warnings will also be shown in the error overlay
+    // in the browser.
+    showEslintErrorsInOverlay: false,
 
     /**
      * Source Maps
@@ -47,9 +55,10 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, "../dist"),
-    assetsSubDirectory: "static",
-    assetsPublicPath: "/",
-
+    assetsSubDirectory: "static", // 编译生成文档资源存储，相对于dist文件夹的
+    assetsPublicPath: "./", // 仅限线上访问资源，非api,相对于当前的域名,也可以指定域名全路径，api配置见config/dev.env.js和prod.env.js文件,初始化是在main.js
+    // 具体配置见 《npm-资源路径-本地调试-线上环境的api配置-环境隔离-打包》
+    // 或者 //jiangjiesheng.gitee.io/qu-na-er/ ，就是不要使用绝对路径 /
     /**
      * Source Maps
      */
