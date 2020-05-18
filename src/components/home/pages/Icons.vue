@@ -2,7 +2,7 @@
   <div class="icons">
     <swiper>
       <swiper-slide v-for="(page,index) of pages"
-                    :Key='index'>
+                    :key='index'>
         <div class="icon"
              v-for="item of page"
              :Key='item.id'>

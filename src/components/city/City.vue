@@ -2,7 +2,12 @@
   <div>
     <city-header></city-header>
     <search></search>
-    <city-list :cities="cities" :hot="hotCities"> </city-list>
+    <city-list :cities="cities"
+               :hot="hotCities"
+               :letter="letter">
+    </city-list>
+    <city-alphabet :cities="cities"
+                   @change='handleLetterChange'></city-alphabet>
   </div>
 </template>
 
@@ -11,35 +16,41 @@ import axios from "axios";
 import CityHeader from "./cityheader";
 import Search from "./Search";
 import CityList from "./citylist";
-
+import Bscroll from "better-scroll";
+import CityAlphabet from './Alphabet'
 export default {
   name: "City",
   components: {
     CityHeader,
     Search,
-    CityList
+    CityList,
+    CityAlphabet
   },
-  data() {
+  data () {
     return {
       cities: {},
-      hotCities: []
+      hotCities: [],
+      letter: ''
     };
   },
   methods: {
-    getCityInfo() {
+    getCityInfo () {
       axios.get("/api/city.json").then(this.handleGetCityInfoSucc);
     },
-    handleGetCityInfoSucc(res) {
+    handleGetCityInfoSucc (res) {
       res = res.data;
       if (res.ret && res.data) {
         const data = res.data;
         this.cities = data.cities;
         this.hotCities = data.hotCities;
       }
-      console.log(res);
+
+    },
+    handleLetterChange (letter) {
+      this.letter = letter
     }
   },
-  mounted() {
+  mounted () {
     this.getCityInfo();
   }
 };
