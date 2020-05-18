@@ -14,6 +14,7 @@ import HomeIcons from "./pages/Icons";
 import HomeRecommend from "./pages/Recommend";
 import HomeWeekend from "./pages/Homeweekend";
 import axios from "axios";
+
 export default {
   components: {
     name: "Home",

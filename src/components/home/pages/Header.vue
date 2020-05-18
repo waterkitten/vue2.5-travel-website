@@ -21,7 +21,13 @@
   </div>
 </template>
 <script>
-
+import { mapState } from 'vuex'
+export default {
+  name: 'HomeHeader',
+  computed: {
+    ...mapState(['city'])
+  }
+}
 </script>
 <style scoped lang='stylus'>/* 局部 */
 @import '~css/var.stylus'
