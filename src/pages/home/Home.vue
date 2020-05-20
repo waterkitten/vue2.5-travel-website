@@ -27,7 +27,7 @@ export default {
   },
   data () {
     return {
-      lastCity: '',  //临时缓存变量
+      lastCity: '', // 临时缓存变量
       swiperList: [],
       iconList: [],
       recommendList: [],
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json?city=' + this.city)   // this.city 从 computed 中获取
+      axios.get('/api/index.json?city=' + this.city) // this.city 从 computed 中获取
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
