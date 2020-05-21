@@ -1,28 +1,49 @@
 <template>
   <div>
-    <div class="banner">
+    <div class="banner"
+         @click="handleBannerClick">
       <img class="banner-img"
-           src="http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_600x330_9eb9410c.jpg"
+           src="https://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_600x330_9eb9410c.jpg"
            alt="">
       <div class="banner-info">
         <div class="banner-title">
           武隆天坑地缝国家地质公园
         </div>
         <div class="banner-number">
-          <span class="iconfont icon-tupian">&#xea9c;</span>
+          <span class="iconfont icon-tupian"></span>
           3
         </div>
       </div>
     </div>
-
+    <common-gallary :imgs="imgs"
+                    v-show="showGallary"
+                    @close="handleGallaryClose"></common-gallary>
   </div>
 </template>
 
 <script>
-
+import CommonGallary from 'common/gallary/Gallary'
 export default {
-  name: 'DetailBanner'
-
+  name: 'DetailBanner',
+  data () {
+    return {
+      showGallary: false,
+      imgs: ['http://img1.qunarzz.com/sight/p0/1809/86/86d76042cc6581f9a3.img.jpg_r_800x800_429f4dca.jpg',
+        'http://img1.qunarzz.com/sight/p0/1809/fa/faa841bf8c7fe255a3.img.jpg_r_800x800_9b3b1c63.jpg',
+        'http://img1.qunarzz.com/sight/p0/1809/c9/c9ab2722d2990967a3.img.jpg_r_800x800_2ab18a45.jpg']
+    }
+  },
+  methods: {
+    handleBannerClick () {
+      this.showGallary = true
+    },
+    handleGallaryClose () {
+      this.showGallary = false
+    }
+  },
+  components: {
+    CommonGallary: CommonGallary
+  }
 }
 </script>
 
