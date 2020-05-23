@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <keep-alive>
+    <keep-alive exclude="Detail">
       <!-- router-view 显示的是当前路由地址所对应的内容 -->
-      <router-view/>
+      <router-view />
     </keep-alive>
   </div>
 </template>
@@ -14,5 +14,4 @@ export default {
 </script>
 
 <style>
-
 </style>
