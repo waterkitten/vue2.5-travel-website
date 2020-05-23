@@ -2,8 +2,11 @@
   <div>
     <city-header></city-header>
     <city-search :cities="cities"></city-search>
-    <city-list :cities="cities" :hot="hotCities" :letter="letter"></city-list>
-    <city-alphabet :cities="cities" @change="handleLetterClick"></city-alphabet>
+    <city-list :cities="cities"
+               :hot="hotCities"
+               :letter="letter"></city-list>
+    <city-alphabet :cities="cities"
+                   @change="handleLetterClick"></city-alphabet>
   </div>
 </template>
 
@@ -19,13 +22,13 @@ export default {
     CityHeader: CityHeader,
     CitySearch: CitySearch,
     CityList: CityList,
-    CityAlphabet: CityAlphabet,
+    CityAlphabet: CityAlphabet
   },
   data () {
     return {
       cities: {},
       hotCities: [],
-      letter: ''  // Alphabet 通过 change 事件传递过来的数据
+      letter: '' // Alphabet 通过 change 事件传递过来的数据
     }
   },
   methods: {
@@ -51,5 +54,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-</style>
+<style lang="stylus" scoped></style>
