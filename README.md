@@ -32,8 +32,6 @@ npm run build --report
  8. 使用axios发送ajax请求
  9. 首页父子组件间传值
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200515211824865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N6dXdhdGVyYnJvdGhlcg==,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200516143954670.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N6dXdhdGVyYnJvdGhlcg==,size_16,color_FFFFFF,t_70)
 
  - [VUE快速搭建轮播图](https://blog.csdn.net/szuwaterbrother/article/details/106132833)
  - [VUE实现css样式以及图片防抖动优化](https://blog.csdn.net/szuwaterbrother/article/details/106147740)
@@ -56,7 +54,6 @@ npm run build --report
 10. vuex的高级使用和localStorage
  11.  keep-alive实现请求数据缓存以优化网页性能
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517235535317.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N6dXdhdGVyYnJvdGhlcg==,size_16,color_FFFFFF,t_70)
 
 
 
@@ -66,8 +63,7 @@ npm run build --report
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200518164646787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N6dXdhdGVyYnJvdGhlcg==,size_16,color_FFFFFF,t_70)
 
 
-关于vuex，一张图就好了
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200519173906292.gif)
+
 **开源源码**
 
  - [轮播图———search-logic](https://github.com/waterbrother2019122132/vue-.git)
