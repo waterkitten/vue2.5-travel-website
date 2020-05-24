@@ -1,4 +1,7 @@
-# vue-f
+# vue的新手入门i项目
+# 旅游网站的搭建---简易版的去哪儿旅游网站
+
+
 
 > A Vue.js project
 
@@ -17,6 +20,7 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+要先搭建脚手架，然后再开展
 
 ## 阶段一： vue项目首页的搭建
 
